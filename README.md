@@ -17,3 +17,6 @@ All these scripts were used to perform most of the analysis presented at Fernand
 7. **NonTemplateAdditions_global.py**: Script to calculate the global % of different NTA. The % is respect the total number of NTA reads, not total reads.
 
 8. **NonTemplateAdditions_by_miRNA.py**: Script to calculate the % of reads that represent a determined NTA for each individual miRNA. Has an option to give the number of counts from that NTA instead of the % of reads.
+
+
+For any questions, contact me at daniel.fernandezperez@ieo.it
