@@ -2,9 +2,9 @@
 
 All these scripts were used to perform most of the analysis presented at Fernandez-Perez et al. 2017.
 
-1. **mirnaclassif_and_realcounts.pl**: This script will generate a csv file with the classification of all miRNA sequences respect to the seed region (for a more detailed description, Fernandez-Perez et al. 2017). It uses 2 files as input: a sam file, processed with the samtools command `fillmd -e` (which substitutes all the matched nucleotides by "=", which will be used by the scritps NonTemplateAdditions.py to classify the NTA), and a file that is provided by miRBase called *mmu_miRbase21.str* (you can find it in this repository). To obtain the same data that was represented in the FIG 2A/C in Fernandez-Perez et al. 2017 you will have to process the output file with the script *parse_mirnaclassif_5countsfilt.pl* 
+1. **mirnaclassif_and_realcounts.pl**: This script will generate a csv file with the classification of all miRNA sequences respect to the seed region (for a more detailed description, Fernandez-Perez et al. 2017). It uses 2 files as input: a sam file, processed with the samtools command `fillmd -e` (which substitutes all the matched nucleotides by "=", which will be used by the scritps NonTemplateAdditions.py to classify the NTA), and a file that is provided by miRBase called *mmu_miRbase21.str* (you can find it in this repository). To obtain the same data that was represented in the FIG 2A/C in Fernandez-Perez et al. 2017 you will have to process the output file with the script *parse_mirnaclassif_5countsfilt.pl*. 
 
-2. **parse_mirnaclassif_5countsfilt.pl**: Parses the output of *mirnaclassif_and_realcounts.pl* to obtain a table with the total number of reads for the sequences classified as NoChange, NonCanonicalProcessing, Inseed, Outseed and Firstnt.
+2. **parse_mirnaclassif_5countsfilt.pl**: Parses the output of *mirnaclassif_and_realcounts.pl* to obtain a table with the total number of reads of the sequences classified as NoChange, NonCanonicalProcessing, Inseed, Outseed and Firstnt.
 
 3. **mmu_miRbase21.str**: This file is required by the script *mirnaclassif_and_realcounts.pl*.
 
